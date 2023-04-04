@@ -471,3 +471,21 @@ What type of relationship is this?
  Next: When you're ready, create a migration with php bin/console make:migration
 
 PS C:\Users\User\OneDrive\Documents\Symfony\semaine_2\TeeShop> 
+--------------------------------------------------------------------------------
+now to create form symfony console make:form 
+------------------------------------------------------------------------
+
+PS C:\Users\User\OneDrive\Documents\Symfony\semaine_2\TeeShop> symfony console make:form RegisterFormType
+
+ The name of Entity or fully qualified model class name that the new form will be bound to (empty for none):
+ > User
+
+ created: src/Form/RegisterFormType.php
+
+ 
+  Success! 
+ 
+
+ Next: Add fields to your form and start using it.
+ Find the documentation at https://symfony.com/doc/current/forms.html
+PS C:\Users\User\OneDrive\Documents\Symfony\semaine_2\TeeShop> 
