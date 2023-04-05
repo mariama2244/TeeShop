@@ -489,3 +489,51 @@ PS C:\Users\User\OneDrive\Documents\Symfony\semaine_2\TeeShop> symfony console m
  Next: Add fields to your form and start using it.
  Find the documentation at https://symfony.com/doc/current/forms.html
 PS C:\Users\User\OneDrive\Documents\Symfony\semaine_2\TeeShop> 
+----------------------------------------------------------------------------------------
+
+for auth
+---------------------------------------------------------------------------------------
+Next: Open your new controller class and add some pages!
+PS C:\Users\User\OneDrive\Documents\Symfony\semaine_2\TeeShop> symfony console make:auth
+
+ What style of authentication do you want? [Empty authenticator]:
+  [0] Empty authenticator
+  [1] Login form authenticator
+ > 1
+
+ The class name of the authenticator to create (e.g. AppCustomAuthenticator):
+ > AppLoginAuthenticator 
+
+ Choose a name for the controller class (e.g. SecurityController) [SecurityController]:
+ >
+
+ Do you want to generate a '/logout' URL? (yes/no) [yes]:
+ >
+
+ created: src/Security/AppLoginAuthenticator.php
+ updated: config/packages/security.yaml
+ created: src/Controller/SecurityController.php
+ created: templates/security/login.html.twig
+ 
+  Success! 
+ 
+
+ Next:
+ - Customize your new authenticator.
+ - Finish the redirect "TODO" in the App\Security\AppLoginAuthenticator::onAuthenticationSuccess() method. - Review & adapt the login template: templates/security/login.html.twig.
+PS C:\Users\User\OneDrive\Documents\Symfony\semaine_2\TeeShop> symfony console d:s:u -f
+
+
+ [WARNING] Not passing the "--complete" option to "orm:schema-tool:update" is deprecated and   
+           will not be supported when using doctrine/dbal 4                                    
+                                                                                               
+
+ Updating database schema...
+
+     1 query was executed
+
+                                                                                               
+ [OK] Database schema updated successfully!                                                    
+                                                                                               
+
+PS C:\Users\User\OneDrive\Documents\Symfony\semaine_2\TeeShop>
