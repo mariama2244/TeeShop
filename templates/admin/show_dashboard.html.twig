@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin - Tableau de bord | Teeshop
+{% endblock %}
+
+{% block body %}
+    <h1 class="text-center mt-4">Tableau de Bord</h1>
+
+	<div class="row">
+		<div class="col-10 mx-auto my-4">
+
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Produits</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Membres</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Commandes</button>
+				</li>
+                <li class="nav-item ms-auto" role="presentation">
+                    <a class="btn btn-primary" href="#"><i class="bi bi-plus-circle"></i>Ajouter de produits</a>
+                </li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+                  {#////////////////////////////// TABLE PRODUITS  ////////////////////////////////////////////////////#}
+				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Proudits</div>
+                  {#////////////////////////////// TABLE PRODUITS  ////////////////////////////////////////////////////#}
+
+                  <table class="table">
+                    <thead>
+                      <tr class="text-center">
+
+                        <th>#</th>
+                        <th>Titre</th>
+                        <th>Description</th>
+                        <th>Couleur</th>
+                        <th>Taille</th>
+                        <th>Collection</th>
+                        <th>Photo</th>
+                        <th>Prix</th>
+                        <th>Stock</th>
+                        <th>Crée le</th>
+                        <th>Modifié le</th>
+                        <th>Action</th>
+                       
+                      </tr>
+                    </thead>
+                  </table>
+
+                  {#////////////////////////////// TABLE MEMBRES  ////////////////////////////////////////////////////#}
+				<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Users</div>
+                 {#////////////////////////////// TABLE MEMBRES  ////////////////////////////////////////////////////#}
+
+                  {#////////////////////////////// TABLE COMMANDES  ////////////////////////////////////////////////////#}
+				<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Commandes</div>
+                {#////////////////////////////// TABLE COMMANDES  ////////////////////////////////////////////////////#}
+			</div>
+
+		</div>
+	</div>
+
+{% endblock %}
