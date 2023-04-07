@@ -34,7 +34,7 @@ class ProductFormType extends AbstractType
                     'M' => 'm', 
                     'L' => 'l',  
                     'XL' => 'xl',  
-                ]
+                ],
                       
             ])
             ->add('collection', ChoiceType::class, [
@@ -62,7 +62,7 @@ class ProductFormType extends AbstractType
                 'validate' => false,
                 'attr' => [
                     'class' => "d-block mx-auto my-3 btn btn-success col-3"
-                ]
+                ],
             ])
         ;
     }
